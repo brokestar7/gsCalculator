@@ -6,117 +6,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title>E7 GS Calculator</title>
 </head>
 
-<body class="" style="background-color: white;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<body>
+    <div class="min-vh-100">
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search" />
-                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">
-                        Search
-                    </button>
-                </form>
+        <nav class=" navbar navbar-expand-lg navbar-dark bg-primary mb-5">
+            <div class="container">
+                <a class="navbar-brand" href="#">E7 Calculator</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-sm-2" type="text" placeholder="Search" />
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
             </div>
+        </nav>
+
+
+
+        <div class="container">
+            <div class="d-flex justify-content-center">
+
+                <div class="card border-light mb-3 justify-content-center" style="max-width: 60rem;">
+                    <div class="card-header fs-5">Read Me</div>
+                    <div class="card-body">
+                        <h4 class="card-title fs-3">Guia de uso :</h4>
+                        <p class="card-text fs-5">Aqui ira la explicacion de como usar la aplicacion web y todo lo
+                            relacionado a ella. <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
+                            rem
+                            officia magni corporis vero itaque eius numquam molestiae enim, magnam laudantium asperiores
+                            debitis illum, nulla voluptatem assumenda repudiandae! Illo, reiciendis!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <select class="form-select form-select-lg mb-3 mb-5 mt-5 w-50" aria-label=".form-select-lg example">
+                    <option selected>Elije la rareza del set</option>
+                    <option value="1">Epico</option>
+                    <option value="2">Heroico</option>
+                </select>
+
+                <div class="container">
+                    <div class="row">
+
+                        <select class="form-select form-select-xl mb-3 col" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Default input" id="inputDefault">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <select class="form-select form-select-xl mb-3 col" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Default input" id="inputDefault">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <select class="form-select form-select-xl mb-3 col" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Default input" id="inputDefault">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <select class="form-select form-select-xl mb-3 col" aria-label=".form-select-lg example">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Default input" id="inputDefault">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container d-flex justify-content-between">
+                    <button type="button" class="btn btn-light mt-4">CALCULAR</button>
+                    <button type="button" class="btn btn-outline-light mt-4">RESETEAR</button>
+                </div>
+            </div>
+
+
+
         </div>
-    </nav>
+    </div>
 
 
-    
-
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Primary card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Secondary card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Success card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Danger card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Warning card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Info card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card bg-light mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Light card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h4 class="card-title">Dark card title</h4>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  
-  
 </body>
 
 </html>
