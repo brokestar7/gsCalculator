@@ -1,5 +1,7 @@
-document.getElementById("type").addEventListener("click", type);
-document.getElementById("send").addEventListener("click", calculate);
+document.getElementById("type").addEventListener('change' , type);
+// document.getElementById("send").addEventListener("click", calculate);
+// document.getElementById("reset").addEventListener('click', reset);
+
 
 let stats = [];
 
@@ -16,10 +18,19 @@ let spd = document.querySelector("spd");
 let eff = document.querySelector("eff");
 let res = document.querySelector("res");
 
-type() {
-
+function type() {
+    let value = document.getElementById("type").value;
+    if(value > 0){
+        console.log("funciona el type", value );
+    }
+    else{
+        return false;
+    }
 }
 
-calculate() {
 
-}
+
+
+// calculate() {
+
+// }
