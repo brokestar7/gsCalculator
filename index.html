@@ -110,7 +110,7 @@
 
                         <div class="row ">
 
-                            <select class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
+                            <select id="stat1" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
                                 <option selected>Selecciona substat</option>
                                 <option value="atk_flat">atk</option>
                                 <option value="atk">atk%</option>
@@ -127,14 +127,14 @@
                             <div class="col-sm">
                                 <div class="form-group input-group input-group-lg">
                                     <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="inputDefault">
+                                        id="value_stat1">
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
 
-                            <select class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
+                            <select id="stat2" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
                                 <option selected>Selecciona substat</option>
                                 <option value="atk_flat">atk</option>
                                 <option value="atk">atk%</option>
@@ -151,13 +151,13 @@
                             <div class="col-sm">
                                 <div class="form-group input-group input-group-lg">
                                     <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="inputDefault">
+                                        id="value_stat2">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
 
-                            <select class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
+                            <select id="stat3" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
                                 <option selected>Selecciona substat</option>
                                 <option value="atk_flat">atk</option>
                                 <option value="atk">atk%</option>
@@ -174,12 +174,12 @@
                             <div class="col-sm">
                                 <div class="form-group input-group input-group-lg">
                                     <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="inputDefault">
+                                        id="value_stat3">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <select class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
+                            <select id="stat4" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
                                 <option selected>Selecciona substat</option>
                                 <option value="atk_flat">atk</option>
                                 <option value="atk">atk%</option>
@@ -196,7 +196,7 @@
                             <div class="col-sm">
                                 <div class="form-group input-group input-group-lg">
                                     <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="inputDefault">
+                                        id="value_stat4">
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@
 
 
                         <div class="d-flex justify-content-between ">
-                            <button type="button" class="btn btn-light mt-4 fw-bold">CALCULAR</button>
+                            <button type="button" class="btn btn-light mt-4 fw-bold" onclick="calculate()">CALCULAR</button>
                             <!--? el type reset en el boton hace que todos los inputs del form se reinicien  -->
                             <button type="reset" class="btn btn-outline-light mt-4">RESETEAR</button> 
                         </div>
@@ -222,7 +222,7 @@
                     <div class="card text-white bg-secondary" style="margin-bottom: 200px; max-width: 60rem; margin-top: 100px;">
                         <div class="card-header fs-4">Resultado</div>
                         <div class="card-body">
-                            <p class="card-title fs-3">GearScore : 72 - Buena Pieza Bro </p>
+                            <p class="card-title fs-3">GearScore : <span id="gsResult"></span> - Buena Pieza Bro </p>
                             <ul class="list-group fs-5">
                                 <li class="list-group-item bg-secondary">Ej-stat: <span> 40 </span></li>
                                 <li class="list-group-item bg-secondary">Ej-stat: <span> 10 </span></li>
