@@ -54,6 +54,18 @@ function calculate() {
             {
                 gs += parseFloat(stats[i][1]*1.6);
             }
+            else if(stats[i][0]=="atk_flat")
+            {
+                gs += parseFloat(stats[i][1]/10);
+            }
+            else if(stats[i][0]=="hp_flat")
+            {
+                gs += parseFloat(stats[i][1]/50);
+            }
+            else if(stats[i][0]=="def_flat")
+            {
+                gs += parseFloat(stats[i][1]/6);
+            }
             else
             {
                 gs += parseFloat(stats[i][1]);
