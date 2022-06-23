@@ -5,7 +5,7 @@ document.getElementById("type").addEventListener('change' , type);
 
 let stats_names = ["atk_flat","atk","hp_flat","hp","def_flat","def","spd","cc","cdmg","res","eff"];
 
-/*  jony's shit
+/*  
 
 let value = document.getElementById("type").value;
 
@@ -32,20 +32,24 @@ function generate_stats(){
 function load_card(gs,stats) {
 
 
-    if(gs>=70){ // NICE
-        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-success mb-3" style="margin-bottom: 200px; max-width: 60rem; margin-top: 100px;"> <div class="card-header">Resultado</div> <div class="card-body"> <h4 class="card-title">GearScore : <span id="gsResult"></span> - Buena Pieza Bro</h4> <ul class="list-group fs-5"><li class="list-group-item bg-secondary"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-secondary"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-secondary"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-secondary"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text">a</p></div></div></div>'; 
+    if(gs>=70){// BUENA PIEZA BRO
+        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-secondary " style="margin-bottom: 150px; max-width: 60rem; margin-top: 80px;"> <div class="card-header fs-4">Resultado</div> <div class="card-body"> <h4 class="card-title fs-3">GearScore : <span id="gsResult"></span> - Buena Pieza Bro 😎 </h4> <ul class="list-group fs-5"><li class="list-group-item bg-secondary"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-secondary"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-secondary"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-secondary"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text fs-5">Esta pieza es para insta-bloquearla. Puedes usarla para tus cazas 13 o tus mejores personajes de arena. Invierte en transmutadores y reforja sin miedo, valdra la pena.</p></div></div></div>'; 
     }
-    else if(gs >= 60){ // TA BIEN
-        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-warning mb-3" style="margin-bottom: 200px; max-width: 60rem; margin-top: 100px;""><div class="card-header">Resultado</div><div class="card-body"><h4 class="card-title">GearScore : <span id="gsResult"></span> - Ta bien</h4><ul class="list-group fs-5"><li class="list-group-item bg-secondary"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-secondary"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-secondary"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-secondary"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text">a</p></div></div></div>';
+
+    else if(gs>=65){ // TA BIEN
+        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-success " style="margin-bottom: 150px; max-width: 60rem; margin-top: 80px;"> <div class="card-header fs-4">Resultado</div> <div class="card-body"> <h4 class="card-title fs-3">GearScore : <span id="gsResult"></span> - Ta Bien 👍</h4> <ul class="list-group fs-5"><li class="list-group-item bg-success"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-success"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-success"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-success"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text fs-5">Felicidades! Esta es una buena pieza que puedes guardar sin problemas. Si te faltara algun stat para un personaje en concreto podrias intentar usar transmutadores. Queda bajo tu criterio.</p></div></div></div>'; 
+    }
+    else if(gs >= 60){ // USABLE
+        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-warning" style="margin-bottom: 150px; max-width: 60rem; margin-top: 80px;""><div class="card-header fs-4">Resultado</div><div class="card-body"><h4 class="card-title fs-3">GearScore : <span id="gsResult"></span> - Usable 🙂</h4><ul class="list-group fs-5"><li class="list-group-item bg-warning"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-warning"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-warning"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-warning"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text fs-5">La pieza en si es util, es una base para tus personajes. Mira si tienes la opcion de reforjala para intentar sacarle mas gs. Si no fuere el caso, en cuanto saques una pieza mejor, mira de cambiarla. </p></div></div></div>';
     }
     else{ // VENDELA 
-        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-danger mb-3" style="margin-bottom: 200px; max-width: 60rem; margin-top: 100px;""><div class="card-header">Resultado</div><div class="card-body"><h4 class="card-title">GearScore : <span id="gsResult"></span> - Vendela</h4><ul class="list-group fs-5"><li class="list-group-item bg-secondary"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-secondary"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-secondary"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-secondary"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text">a</p></div></div></div>';
+        document.getElementById("card").innerHTML= '<div class="d-flex justify-content-center"><div class="card text-white bg-danger" style="margin-bottom: 150px; max-width: 60rem; margin-top: 80px;""><div class="card-header fs-4">Resultado</div><div class="card-body"><h4 class="card-title fs-3">GearScore : <span id="gsResult"></span> - Vendela 🤢</h4><ul class="list-group fs-5"><li class="list-group-item bg-danger"><span id="namestat1"></span>: <span id="substat1"></span></li><li class="list-group-item bg-danger"><span id="namestat2"></span>: <span id="substat2"></span></li><li class="list-group-item bg-danger"><span id="namestat3"></span>: <span id="substat3"></span></li><li class="list-group-item bg-danger"><span id="namestat4"></span>: <span id="substat4"></span></li></ul><p class="card-text fs-5">Los stats son demasiado bajos... Si no pretendes hacer Wyverno 1 sera mejor que la extraigas o la uses para consegur talismanes en el santuario...</p></div></div></div>';
     }
 
     document.getElementById("gsResult").innerHTML = gs.toFixed(2);
     for (let i=0; i< stats.length;i++) {
         document.getElementById("namestat"+(i+1)).innerHTML = stats[i][0];
-        document.getElementById("substat"+(i+1)).innerHTML = stats[i][1];
+        document.getElementById("substat"+(i+1)).innerHTML = Number(stats[i][1]).toFixed(2);
     }
 
 /* antiguo
@@ -54,7 +58,7 @@ function load_card(gs,stats) {
             <div class="card-header fs-4">Resultado</div>
                 <div class="card-body">
                     <p class="card-title fs-3">GearScore : <span>gs</span> - Buena Pieza Bro </p>
-                         <ul class="list-group fs-5">
+                        <ul class="list-group fs-5">
                             <li class="list-group-item bg-secondary">Ej-stat: <span> 40 </span></li>
                             <li class="list-group-item bg-secondary">Ej-stat: <span> 10 </span></li>
                             <li class="list-group-item bg-secondary">Ej-stat: <span> 14 </span></li>
