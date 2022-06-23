@@ -47,13 +47,22 @@
 
 
 
-        <div class="container">
-            <div class="d-flex justify-content-center">
+        <div class="container">           
+            <!-- ------------------ -->
 
-                <div class="card border-light mb-3 justify-content-center" style="max-width: 60rem;">
-                    <div class="card-body">
-                        <h4 class="card-title fs-3">Guia de uso :</h4>
-                        <p class="card-text fs-5">Aqui ira la explicacion de como usar la aplicacion web y todo lo
+
+            <div class="accordion " id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed fs-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne"  aria-expanded="false" aria-controls="collapseOne">
+                            Guia de uso :
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample" >
+                        <div class="accordion-body fs-5">
+                            <strong>This is the first item's accordion body.</strong>Aqui ira la explicacion de como usar la aplicacion web y todo lo
                             relacionado a ella. <br> Trabaja, plasma las palabras, hazlas balas
                             Atrapa ráfagas, sal, machaca cada sala
                             Ladra hasta rasgar la garganta
@@ -74,140 +83,149 @@
                             Canalla ¿Vas a dar la campanada? Para nada
                             Camaradas harán manada para achantar
                             Hasta cantarás baladas para agradar a las masas
-                            Salta pa' casa, cansas ya</p>
+                            Salta pa' casa, cansas ya
+                        </div>
                     </div>
                 </div>
+                
             </div>
+
+
+
+            <!-- ---------------Final -->
 
             <div class="container">
                 <form class="d-grid gap-3" id="app" action="">
 
-                        <div class="d-flex flex-column flex-sm-row gap-3  justify-content-around mb-5 mt-5">
-                            <div class="">
-                                <select class="form-select form-select-lg mb-2 mt-2" id="type"
-                                    aria-label=".form-select-lg example">
-                                    <option selected value="0">Elije la rareza del set</option>
-                                    <option value="1">Epico</option>
-                                    <option value="2">Heroico</option>
-                                </select>
-                            </div>
-
-
-                            <div class="mt-2">
-                                <select class="form-select form-select-lg"
-                                    aria-label=".form-select-lg example">
-                                    <option selected>Elije la nivel del set</option>
-                                    <option value="1">88</option>
-                                    <option value="2">85</option>
-                                    <option value="2">75</option>
-                                </select>
-                            </div>
-
-
-                        </div>
-
-
-
-                        <div class="row ">
-
-                            <select id="stat1" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
-                                <option selected>Selecciona substat</option>
-                                <option value="atk_flat">atk</option>
-                                <option value="atk">atk%</option>
-                                <option value="hp_flat">hp</option>
-                                <option value="hp">hp%</option>
-                                <option value="def_flat">def</option>
-                                <option value="def">def%</option>
-                                <option value="spd">spd</option>
-                                <option value="cc">cChance</option>
-                                <option value="cdmg">cDmg</option>
-                                <option value="res">resEff</option>
-                                <option value="eff">Eff</option>
+                    <div class="d-flex flex-column flex-sm-row gap-3  justify-content-around mb-5 mt-5">
+                        <div class="">
+                            <select class="form-select form-select-lg mb-2 mt-2" id="type"
+                                aria-label=".form-select-lg example">
+                                <option selected value="0">Elije la rareza del set</option>
+                                <option value="1">Epico</option>
+                                <option value="2">Heroico</option>
                             </select>
-                            <div class="col-sm">
-                                <div class="form-group input-group input-group-lg">
-                                    <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="value_stat1">
-                                </div>
-                            </div>
                         </div>
 
-                        <div class="row">
 
-                            <select id="stat2" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
-                                <option selected>Selecciona substat</option>
-                                <option value="atk_flat">atk</option>
-                                <option value="atk">atk%</option>
-                                <option value="hp_flat">hp</option>
-                                <option value="hp">hp%</option>
-                                <option value="def_flat">def</option>
-                                <option value="def">def%</option>
-                                <option value="spd">spd</option>
-                                <option value="cc">cChance</option>
-                                <option value="cdmg">cDmg</option>
-                                <option value="res">resEff</option>
-                                <option value="eff">Eff</option>
+                        <div class="mt-2">
+                            <select class="form-select form-select-lg" aria-label=".form-select-lg example">
+                                <option selected>Elije la nivel del set</option>
+                                <option value="1">88</option>
+                                <option value="2">85</option>
+                                <option value="2">75</option>
                             </select>
-                            <div class="col-sm">
-                                <div class="form-group input-group input-group-lg">
-                                    <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="value_stat2">
-                                </div>
-                            </div>
                         </div>
-                        <div class="row">
-
-                            <select id="stat3" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
-                                <option selected>Selecciona substat</option>
-                                <option value="atk_flat">atk</option>
-                                <option value="atk">atk%</option>
-                                <option value="hp_flat">hp</option>
-                                <option value="hp">hp%</option>
-                                <option value="def_flat">def</option>
-                                <option value="def">def%</option>
-                                <option value="spd">spd</option>
-                                <option value="cc">cChance</option>
-                                <option value="cdmg">cDmg</option>
-                                <option value="res">resEff</option>
-                                <option value="eff">Eff</option>
-                            </select>
-                            <div class="col-sm">
-                                <div class="form-group input-group input-group-lg">
-                                    <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="value_stat3">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <select id="stat4" class="form-select form-select-lg mb-3 col" aria-label=".form-select-lg example">
-                                <option selected>Selecciona substat</option>
-                                <option value="atk_flat">atk</option>
-                                <option value="atk">atk%</option>
-                                <option value="hp_flat">hp</option>
-                                <option value="hp">hp%</option>
-                                <option value="def_flat">def</option>
-                                <option value="def">def%</option>
-                                <option value="spd">spd</option>
-                                <option value="cc">cChance</option>
-                                <option value="cdmg">cDmg</option>
-                                <option value="res">resEff</option>
-                                <option value="eff">Eff</option>
-                            </select>
-                            <div class="col-sm">
-                                <div class="form-group input-group input-group-lg">
-                                    <input type="number" class="form-control stats_value" placeholder="Valor del stat"
-                                        id="value_stat4">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <input type="reset" value="Reset the form"> -->
 
 
-                        <div class="d-flex justify-content-between ">
-                            <button type="button" class="btn btn-light mt-4 fw-bold" onclick="calculate()">CALCULAR</button>
-                            <!--? el type reset en el boton hace que todos los inputs del form se reinicien  -->
-                            <button type="reset" class="btn btn-outline-light mt-4">RESETEAR</button> 
+                    </div>
+
+
+
+                    <div class="row ">
+
+                        <select id="stat1" class="form-select form-select-lg mb-3 col"
+                            aria-label=".form-select-lg example">
+                            <option selected>Selecciona substat</option>
+                            <option value="atk_flat">atk</option>
+                            <option value="atk">atk%</option>
+                            <option value="hp_flat">hp</option>
+                            <option value="hp">hp%</option>
+                            <option value="def_flat">def</option>
+                            <option value="def">def%</option>
+                            <option value="spd">spd</option>
+                            <option value="cc">cChance</option>
+                            <option value="cdmg">cDmg</option>
+                            <option value="res">resEff</option>
+                            <option value="eff">Eff</option>
+                        </select>
+                        <div class="col-sm">
+                            <div class="form-group input-group input-group-lg">
+                                <input type="number" class="form-control stats_value" placeholder="Valor del stat"
+                                    id="value_stat1">
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="row">
+
+                        <select id="stat2" class="form-select form-select-lg mb-3 col"
+                            aria-label=".form-select-lg example">
+                            <option selected>Selecciona substat</option>
+                            <option value="atk_flat">atk</option>
+                            <option value="atk">atk%</option>
+                            <option value="hp_flat">hp</option>
+                            <option value="hp">hp%</option>
+                            <option value="def_flat">def</option>
+                            <option value="def">def%</option>
+                            <option value="spd">spd</option>
+                            <option value="cc">cChance</option>
+                            <option value="cdmg">cDmg</option>
+                            <option value="res">resEff</option>
+                            <option value="eff">Eff</option>
+                        </select>
+                        <div class="col-sm">
+                            <div class="form-group input-group input-group-lg">
+                                <input type="number" class="form-control stats_value" placeholder="Valor del stat"
+                                    id="value_stat2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <select id="stat3" class="form-select form-select-lg mb-3 col"
+                            aria-label=".form-select-lg example">
+                            <option selected>Selecciona substat</option>
+                            <option value="atk_flat">atk</option>
+                            <option value="atk">atk%</option>
+                            <option value="hp_flat">hp</option>
+                            <option value="hp">hp%</option>
+                            <option value="def_flat">def</option>
+                            <option value="def">def%</option>
+                            <option value="spd">spd</option>
+                            <option value="cc">cChance</option>
+                            <option value="cdmg">cDmg</option>
+                            <option value="res">resEff</option>
+                            <option value="eff">Eff</option>
+                        </select>
+                        <div class="col-sm">
+                            <div class="form-group input-group input-group-lg">
+                                <input type="number" class="form-control stats_value" placeholder="Valor del stat"
+                                    id="value_stat3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <select id="stat4" class="form-select form-select-lg mb-3 col"
+                            aria-label=".form-select-lg example">
+                            <option selected>Selecciona substat</option>
+                            <option value="atk_flat">atk</option>
+                            <option value="atk">atk%</option>
+                            <option value="hp_flat">hp</option>
+                            <option value="hp">hp%</option>
+                            <option value="def_flat">def</option>
+                            <option value="def">def%</option>
+                            <option value="spd">spd</option>
+                            <option value="cc">cChance</option>
+                            <option value="cdmg">cDmg</option>
+                            <option value="res">resEff</option>
+                            <option value="eff">Eff</option>
+                        </select>
+                        <div class="col-sm">
+                            <div class="form-group input-group input-group-lg">
+                                <input type="number" class="form-control stats_value" placeholder="Valor del stat"
+                                    id="value_stat4">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <input type="reset" value="Reset the form"> -->
+
+
+                    <div class="d-flex justify-content-between mb-5">
+                        <button type="button" class="btn btn-light mt-4 fw-bold" onclick="calculate()">CALCULAR</button>
+                        <!--? el type reset en el boton hace que todos los inputs del form se reinicien  -->
+                        <button type="reset" class="btn btn-outline-light mt-4">RESETEAR</button>
+                    </div>
 
 
                 </form>
